@@ -1,0 +1,57 @@
+
+
+
+
+
+
+/*Footer */
+
+.sectioncontainer-5{
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    background-color: #1F2937;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 40px 0;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    width: 74%;
+}
+
+.footer-grid > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    color: #e5e7ebc6;
+    font-size: 16px;
+}
+
+.footer-grid p{
+    margin: 0;
+}
+
+.footer-item{
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-text{
+    font-family: 'Roboto Thin Italic', sans-serif;
+    font-size: 18px;
+    color: #e5e7ebc6;
+    margin: 0;
+}
+
+.footer-grid > .footerLogo{
+    display: flex;
+    align-items: center;
+}
