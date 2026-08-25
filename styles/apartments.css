@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Shared navigation */
+
+header {
+    width: 100%;
+    background-color: #1F2937;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 15px 100px;
+}
+
+.logo {
+    width: 150px;
+    height: 60px;
+}
+
+/* Nav de escritorio */
+.nav1 {
+    display: block;
+}
+
+/* Checkbox oculto que guarda el estado del menú */
+.menu-toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Icono burger, oculto en escritorio */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+
+    span {
+        width: 25px;
+        height: 3px;
+        background-color: #F9FAF8;
+        border-radius: 2px;
+    }
+}
+
+
+/* Nav desplegable móvil, oculto por defecto */
+.nav2 {
+    display: none;
+    width: 100%;
+}
+
+.menu-box {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    color: #e5e7ebc6;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-item {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Mostrar el desplegable cuando el checkbox está marcado */
+.menu-toggle:checked~.nav2 {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .nav1 {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav2 .menu-box {
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 20px;
+    }
+}
