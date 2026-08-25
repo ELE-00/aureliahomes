@@ -11,7 +11,7 @@ body {
 	padding: 0;
 }
 
-/* Shared navigation */
+/* ----- Shared navigation ----- */
 
 header {
     /* border: 2px solid red; */
@@ -26,18 +26,27 @@ header {
 }
 
 .header-container {
-    /* border: 2px solid red; */
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
     width: 74%;
 	font-weight: 300;
-    
+
+
 }
 
 .header-box {
-    /* border: 2px solid rgb(0, 255, 47); */
+    display: flex;
     justify-content: space-between;
-    display: flex; 
+	align-items: center;
+    width: 100%;
     margin: 20px;
-    gap: 60px;
+    position: relative;
+
+}
+
+.header-container > .header-box:last-of-type {
+    display: none;
 }
 
 .menu-box {
@@ -55,14 +64,68 @@ header {
 	text-decoration: none;
 }
 
+.header-item:hover {
+	color: white;
+}
+
 .header-item.active {
 	text-decoration: underline;
 	text-underline-offset: 6px;
 }
 
-/* Shared footer */
 
-.sectioncontainer-5 {
+/* Checkbox oculto que guarda el estado del menú */
+.menu-toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Icono burger, oculto en escritorio */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+
+    span {
+        width: 40px;
+        height: 6px;
+        background-color: #F9FAF8;
+        border-radius: 2px;
+    }
+
+}
+
+
+/* Nav desplegable móvil, oculto por defecto */
+.nav2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #F9FAF8;
+    z-index: 10;
+}
+
+/* Mostrar el desplegable cuando el checkbox está marcado */
+.header-container:has(.menu-toggle:checked) .nav2 {
+    display: block;
+}
+
+
+
+
+
+
+
+
+/* ----- Shared footer ----- */
+
+.footer-container {
 	min-height: 100px;
 	width: 100%;
 	display: flex;
@@ -75,8 +138,11 @@ header {
 	padding: 40px 0;
 }
 
+
+
 .footer-grid {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	justify-content: space-between;
 	gap: 40px;
 	width: 74%;
@@ -92,14 +158,28 @@ header {
 	font-size: 16px;
 }
 
+
+
 .footer-grid p {
 	margin: 0;
+}
+
+.footer-gridMobile {
+	display: none;
+	gap: 20px;
+	width: 90%;
+	position: relative;
 }
 
 .footer-item {
 	color: inherit;
 	text-decoration: none;
 }
+
+.footer-item:hover {
+	color: white;
+}
+
 
 .footer-text {
 	font-style: italic;
@@ -109,7 +189,108 @@ header {
 	margin: 0;
 }
 
-.footer-grid > .footerLogo {
+.footer-grid > .footerLogo,
+.footer-gridMobile > .footerLogo {
 	display: flex;
 	align-items: center;
 }
+
+
+.menu-toggle2 {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu-box2 {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 5px;
+	font-size: 18px;
+	color: #e5e7ebc6;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footerNav1 {
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+/* Nav desplegable móvil, oculto por defecto */
+.footerNav2 {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #F9FAF8;
+    z-index: 10;
+}
+
+
+
+/* Mostrar el desplegable cuando el checkbox está marcado */
+.footer-container:has(.menu-toggle2:checked) .footerNav2 {
+    display: block;
+}
+
+
+/* ----- RESPONSIVENESS ----- */
+
+@media screen and (max-width: 768px) {
+	
+	.header-container {
+		width: 100%;
+		padding-right: 1rem;
+	}
+
+    .header-container > .header-box:first-of-type {
+        display: none;
+    }
+    .header-container > .header-box:last-of-type {
+        display: flex;
+    }
+
+	.footer-grid {
+		display: none;
+	}
+
+	.footer-gridMobile {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+    .burger {
+        display: flex;
+    }
+
+    .nav2 .menu-box {
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 20px;
+		color:#1F2937;
+		
+    }
+
+	.footerNav2 .menu-box2 {
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 20px;
+		color:#1F2937;
+
+    }
+
+
+
+
+	
+}
+
+

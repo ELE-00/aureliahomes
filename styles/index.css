@@ -261,3 +261,12 @@ header {
 }
 
 
+@media screen and (max-width: 768px) {
+    .contentcontainer {
+        width: 100%;
+        padding-right: 1rem;
+    }
+
+
+    
+}
