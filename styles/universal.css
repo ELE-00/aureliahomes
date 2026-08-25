@@ -241,6 +241,11 @@ header {
     display: block;
 }
 
+.footer-item.active {
+	text-decoration: underline;
+	text-underline-offset: 6px;
+}
+
 
 /* ----- RESPONSIVENESS ----- */
 
@@ -257,6 +262,17 @@ header {
     .header-container > .header-box:last-of-type {
         display: flex;
     }
+
+	.header-item:hover {
+		color:#1F2937;
+		font-weight: bold;	
+	}
+
+	.footer-item:hover {
+		color:#1F2937;
+		font-weight: bold;	
+	}
+
 
 	.footer-grid {
 		display: none;
