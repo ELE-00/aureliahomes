@@ -7,3 +7,4 @@
 
 - Linked all pages to header and footer
 - Added hoover feature to header and footer navigation
+- Upgraded the header and footer
