@@ -1,4 +1,6 @@
-.header-container {
+ /* Header Section */
+ 
+ .header-container {
     min-height: 150px;
 }
 
@@ -39,6 +41,28 @@
     color: #e5e7ebc6;
     margin: 0;
 }
+
+.hero-button-group {
+    display: flex;
+    gap: 40px;
+}
+
+.hero-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3880F6;
+    border-radius: 10px;
+    min-width: 160px;
+    height: 35px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Benefits Section */
 
 .office-benefits {
     min-height: 500px;
@@ -89,34 +113,123 @@
     margin: 0;
 }
 
+
+
+/* Showcase Section */
+
 .showcase {
     min-height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #e5e7eb;
-    justify-content: center;
+    padding-bottom: 10vh;
 }
 
-.showcase-content{
-    width: 74%;
+.showcase-content {
     display: flex;
-    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 90%;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.showcase-photo {   
+    width: 600px;
+  }
+
+.showcase-photo figure{
+    display: none;
+    margin: 0;
+    text-align: center;
+}
+
+.showcase-photo figure img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.showcase-photo figcaption {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.showcase-buttons {
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     gap: 50px;
 }
 
-.showcase-image-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    flex: 0 1 45%;
-    max-width: 500px;
+.photo-button {
+    padding: 12px 20px;
+    background-color: #1F2937;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+
+.photo-button:hover {
+    background: white;
+    color: #1F2937;
+  }
+
+#pic1:checked ~ .showcase-photo .image1,
+#pic2:checked ~ .showcase-photo .image2,
+#pic3:checked ~ .showcase-photo .image3,
+#pic4:checked ~ .showcase-photo .image4 {
+    display: block;
 }
 
-.showcase-image-box img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+#pic1:checked ~ .showcase-buttons label[for="pic1"],
+#pic2:checked ~ .showcase-buttons label[for="pic2"],
+#pic3:checked ~ .showcase-buttons label[for="pic3"],
+#pic4:checked ~ .showcase-buttons label[for="pic4"] {
+    background: white;
+    color: #1F2937;
+  }
+
+@media (max-width: 768px) {
+
+    .content-container {
+        width: 90%
+    }
+
+    .content-box {
+        width: 90%;
+        flex-direction: column;
+        margin: 20px 0; 
+    }
+
+    .herocontent-box {
+        width: 90%;
+    }
+
+    .content-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .showcase-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .showcase-buttons {
+        gap: 15px;
+        width: 100%;
+    }
+
+    .showcase-photo {
+        width: 100%;
+        max-width: 300px;
+    }
 }

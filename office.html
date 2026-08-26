@@ -28,7 +28,7 @@
                 <img class="logonav2" src="assets/logoSmallWhite.png" alt="Aurelia Homes logo" height="100" width="100">
                 <nav class="nav2">
                     <ul class="menu-box">
-                        <li><a class="header-item" href="index.html" aria-current="page">Home</a></li>
+                        <li><a class="header-item" href="index.html">Home</a></li>
                         <li><a class="header-item" href="apartments.html">Apartments</a></li>
                         <li><a class="header-item active" href="office.html" aria-current="page">Office Space</a></li>
                         <li><a class="header-item" href="contact.html">Contact Us</a></li>
@@ -51,6 +51,11 @@
                 <div class="herocontent-box">
                     <h1 class="hero-main-text">Flexible offices for ambitious businesses .</h1>
                     <p class="hero-secondary-text">Work in a place designed, for focus, comfort, and growth.</p>
+
+                    <div class="hero-button-group">
+                        <a class="hero-button" href="#showcase">View available spaces</a>
+                        <a class="hero-button" href="contact.html">Book a viewing</a>
+                    </div>
                 </div>
 
                 <img src="assets/ModernOfficeInterior.png" alt="Aurelia Homes building exterior" height="250" width="500">
@@ -59,61 +64,74 @@
     </header>
 
     <main>
-        <div class="office-benefits">
+        <section class="office-benefits">
             <div class="benefits-title">
                 <h2 class="h2-benefits"> Benefits of Our Office Spaces </h2>
             </div>
             <div class="benefits-section">
                 <div class="benefits-image-box">
-                    <img src="assets/naturalLight.jpg" alt="">
+                    <img src="assets/naturalLight.jpg" alt="Natural light">
                     <h3 class="benefit-title">Natural light</h3>
                     <p class="benefit-text">Favorable orientation</p>
                 </div>
                 <div class="benefits-image-box">
-                    <img src="assets/flexibleSpace.jpg" alt="">
+                    <img src="assets/flexibleSpace.jpg" alt="Flexible layouts">
                     <h3 class="benefit-title">Flexible layouts</h3>
                     <p class="benefit-text">Offices for teams</p>
                 </div>
                 <div class="benefits-image-box">
-                    <img src="assets/wifi.jpg" alt="">
+                    <img src="assets/wifi.jpg" alt="Fast connectivity">
                     <h3 class="benefit-title">Fast connectivity</h3>
                     <p class="benefit-text">Reliable internet</p>
                 </div>
                 <div class="benefits-image-box">
-                    <img src="assets/sharedSpace.jpg" alt="">
+                    <img src="assets/sharedSpace.jpg" alt="Shared spaces">
                     <h3 class="benefit-title">Shared spaces</h3>
                     <p class="benefit-text">Meet and connect</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="showcase">
+        <section class="showcase" id="showcase">
             <div class="showcase-title">
                 <h2 class="h2-benefits"> Find the right space </h2>
             </div>
+
             <div class="showcase-content">
-                <div class="showcase-image-box">
-                    <img src="assets/privateOffice.jpg" alt="">
-                    <h3 class="benefit-title"> Private Offices </h3>
-                    <p class="benefit-text"> Quiet spaces for focused work.</p>
+                <input type="radio" id="pic1" name="showcase-radio" checked>
+                <input type="radio" id="pic2" name="showcase-radio">
+                <input type="radio" id="pic3" name="showcase-radio">
+                <input type="radio" id="pic4" name="showcase-radio">
+
+                <div class="showcase-photo">
+                    <figure class="image1">
+                        <img src="assets/privateOffice.jpg" alt="Private office">
+                        <figcaption>Quiet spaces for focused work.</figcaption>
+                    </figure>
+                    <figure class="image2">
+                        <img src="assets/teamOffice.jpg" alt="Team studio">
+                        <figcaption>Flexible layouts for growing teams.</figcaption>
+                    </figure>
+
+                    <figure class="image3">
+                        <img src="assets/meetingRooms.jpg" alt="Meeting rooms">
+                        <figcaption> Professional spaces for presentations.</figcaption>
+                    </figure>
+
+                    <figure class="image4">
+                        <img src="assets/SharedLounge.jpg" alt="Shared lounge">
+                        <figcaption>Comfortable areas for collaboration.</figcaption>
+                    </figure>
                 </div>
-                <div class="showcase-image-box">
-                    <img src="assets/teamOffice.jpg" alt="">
-                    <h3 class="benefit-title"> Team Studios </h3>
-                    <p class="benefit-text"> Flexible layouts for growing teams.</p>
-                </div>
-                <div class="showcase-image-box">
-                    <img src="assets/meetingRooms.jpg" alt="">
-                    <h3 class="benefit-title"> Meeting Rooms </h3>
-                    <p class="benefit-text"> Professional spaces for presentations.</p>
-                </div>
-                <div class="showcase-image-box">
-                    <img src="assets/SharedLounge.jpg" alt="">
-                    <h3 class="benefit-title"> Shared Lounge </h3>
-                    <p class="benefit-text"> Comfortable areas for collaboration.</p>
+
+                <div class="showcase-buttons">
+                    <label class="photo-button" for="pic1">Private Offices</label>
+                    <label class="photo-button" for="pic2">Team Studios</label>
+                    <label class="photo-button" for="pic3">Meeting Rooms</label>
+                    <label class="photo-button" for="pic4">Shared Lounge</label>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     
 
