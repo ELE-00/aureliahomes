@@ -141,14 +141,15 @@ header {
 
 
 .footer-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	display: flex;
 	justify-content: space-between;
 	gap: 40px;
 	width: 74%;
+
 }
 
-.footer-grid > div {
+.footer-grid > div,
+.footer-grid > nav {
 	display: flex;
 	flex: 1;
 	flex-direction: column;
@@ -156,6 +157,7 @@ header {
 	gap: 8px;
 	color: #e5e7ebc6;
 	font-size: 16px;
+
 }
 
 
