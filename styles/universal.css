@@ -221,7 +221,6 @@ header {
 	display: none;
 	gap: 20px;
 	width: 90%;
-	position: relative;
 }
 
 .footer-item {
@@ -249,12 +248,6 @@ header {
 }
 
 
-.menu-toggle2 {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-}
-
 .menu-box2 {
 	display: flex;
 	flex-direction: column;
@@ -274,24 +267,9 @@ header {
 }
 
 
-/* Nav desplegable móvil, oculto por defecto */
 .footerNav2 {
-    display: none;
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 20px;
-    background-color: #F9FAF8;
-    z-index: 10;
-}
-
-
-
-/* Mostrar el desplegable cuando el checkbox está marcado */
-.footer-container:has(.menu-toggle2:checked) .footerNav2 {
-    display: block;
+	display: flex;
+	flex-direction: column;
 }
 
 .footer-item.active {
