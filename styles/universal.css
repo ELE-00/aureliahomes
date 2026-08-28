@@ -118,61 +118,94 @@ header {
 
 
 
- /* Benefits Section */
+ /* BASE REUTILIZABLE — Benefits es la clase principal */
+.office-benefits,
+.features-section {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
- .office-benefits {
-     min-height: 400px;
+/* Títulos principales */
+.h2-benefits,
+.features-title {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+/* Grids */
+.benefits-section,
+.features-grid {
+    width: 74%;
+    display: flex;
+    justify-content: space-around; 
+    gap: 70px;
+}
+
+/* Cards */
+.benefits-image-box,
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 160px;
+}
+
+/* Imágenes */
+.benefits-image-box img,
+.feature-card img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Títulos de cada item */
+.benefit-title,
+.feature-title {
+    font-size: 20px;
+    color: #1F2937;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Textos */
+.benefit-text,
+.feature-text {
+    font-size: 18px;
+    color: #808080;
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+
+
+ /* Apart section */
+
+ .apartInfo {
      display: flex;
      flex-direction: column;
      align-items: center;
-     justify-content: center;
-     text-align: center;
  }
 
- .h2-benefits {
-     font-size: 36px;
-     color: #1F2937;
-     font-weight: 800;
-     margin-bottom: 50px;
- }
-
- .benefits-section {
+ .apartInfoContainer {
+     display: flex;
+     align-items: center;
      width: 74%;
-     display: flex;
-     justify-content: space-between;
-     gap: 70px;
+     gap: 40px;
  }
 
- .benefits-image-box {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     gap: 10px;
-     width: 160px;
+ .apartInfoText img {
+     max-height: 450px;
+     max-width: 500px;
+
  }
-
- .benefits-image-box img {
-     width: 80px;
-     height: 80px;
- }
-
- .benefit-title {
-     font-size: 20px;
-     color: #1F2937;
-     font-weight: 700;
-     margin: 0;
- }
-
- .benefit-text {
-     font-size: 18px;
-     color: #808080;
-     text-align: center;
-     font-weight: 300;
-     margin: 0;
- }
-
-
-
 
 /* ----- Shared footer ----- */
 
@@ -224,7 +257,7 @@ header {
 }
 
 .footer-item {
-	color: inherit;
+	color: white;
 	text-decoration: none;
 }
 
@@ -295,12 +328,19 @@ header {
     }
 
 	.header-item:hover {
-		color:#1F2937;
 		font-weight: bold;	
+	}
+	
+	.office-benefits{
+		margin-bottom: 20px;
+	}
+
+	.apartInfoContainer	{
+		margin-top: 20px;
+		flex-direction: column;
 	}
 
 	.footer-item:hover {
-		color:#1F2937;
 		font-weight: bold;	
 	}
 
