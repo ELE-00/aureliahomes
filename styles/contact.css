@@ -107,6 +107,18 @@
     background-color: #2f6fd6;
 }
 
+
+@media screen and (max-width: 480px) {
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     .contact-section {
         width: 90%;
@@ -122,3 +134,4 @@
         padding: 24px;
     }
 }
+

@@ -58,6 +58,7 @@ header {
 .hero-button-group {
     display: flex;
     gap: 40px;
+    margin-top: 20px;
 }
 
 .hero-button {
@@ -99,6 +100,7 @@ header {
     justify-content: center;
     align-items: flex-end;
     margin: 0;
+    gap: 20px;
 }
 
 .testimonial-text {
@@ -117,79 +119,30 @@ header {
 }
 
 
-
-
-
-/*SECTION 4 - Call to action */
-.cta-section {
-    /* border: 2px solid red; */
-    min-height: 350px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-
-
-}
-
-.cta-box {
-    /* border: 2px solid red; */
-    background-color: #3880F6;
-    display: flex;
+/* Imágenes */
+.benefits-image-box img,
+.feature-card2 img {
+    width: 150px;
     height: 150px;
-    width: 70%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    font-style: italic;
-    font-weight: 300;
 }
 
-.cta-content {
-    /* border: 2px solid red; */
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
+@media screen and (max-width: 375px) {
+
+.heromaintext {
+    font-size: 38px;
 }
 
-.cta-copy {
-    /* border: 2px solid red; */
+
+.hero-button-group {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-.cta-title {
-    /* border: 2px solid red; */
-    font-size: 24px;
-    color: white;
-    font-weight: 900;
-    margin: 0;
+
 }
 
-.cta-text {
-    /* border: 2px solid red; */
-    font-size: 18px;
-    color: #e5e7ebc6;
-    margin: 0;
-}
-
-.outline-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    min-width: 120px;
-    height: 35px;
-    margin-top: 10px;
-    border-radius: 8px;
-    border: 2px solid white;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    font-weight: 900;
-}
 
 
 @media screen and (max-width: 768px) {
@@ -226,10 +179,7 @@ header {
         align-items: center;
         gap: 20px;
         width: 95%;
-        margin-top: 2rem;
         margin-bottom: 2rem;
-
-               /* border: 1px solid red; */
 
     }
 
@@ -256,25 +206,14 @@ header {
     }
 
     .testimonial-text {
-    font-size: 28px;
+    font-size: 20px;
 
     }
 
     .testimonial-author {
-        font-size: 20px;
+        font-size: 18px;
     }
 
-   .cta-section {
-    min-height: 250px;
-    } 
-
-    .cta-text{
-        display: none;
-    }
-
-    .cta-content {
-    width: 90%;
-    }
 
 
 
