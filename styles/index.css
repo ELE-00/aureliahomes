@@ -5,75 +5,6 @@ header {
     min-height: 500px;
 }
 
-.header-container {
-    min-height: 150px;
-
-
-}
-
-.contentcontainer {
-    /* border: 2px solid red; */
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    font-weight: 300;
-
-}
-
-.content-box {
-    /* border: 2px solid rgb(0, 255, 47); */
-    justify-content: space-between;
-    display: flex;
-    width: 74%;
-    margin: 20px;
-    gap: 60px;
-}
-
-.herocontent-box {
-    /* border: 1px solid blue; */
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 50%;
-    gap: 10px;
-
-}
-
-.heromaintext {
-    font-size: 48px;
-    font-weight: 900;
-    color: #F9FAF8;
-    margin: 0;
-}
-
-.herosecondarytext {
-    font-size: 18px;
-    color: #e5e7ebc6;
-    margin: 0;
-}
-
-
-.hero-button-group {
-    display: flex;
-    gap: 40px;
-    margin-top: 20px;
-}
-
-.hero-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #3880F6;
-    border-radius: 8px;
-    min-width: 160px;
-    height: 35px;
-    margin-top: 10px;
-    text-decoration: none;
-    color: white;
-}
-
 
 /*SECTION 3 - Testimonial */
 .testimonial-section {
@@ -85,7 +16,7 @@ header {
     align-items: center;
     margin: 0;
     padding: 0;
-    justify-content: center;  
+    justify-content: center;
 
 }
 
@@ -126,52 +57,8 @@ header {
     height: 150px;
 }
 
-@media screen and (max-width: 375px) {
-
-.heromaintext {
-    font-size: 38px;
-}
-
-
-.hero-button-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-
-}
-
-
 
 @media screen and (max-width: 768px) {
-
-    .contentcontainer {
-        padding: 1rem;
-        align-items: center;
-
-    }
-
-    .content-box {
-        flex-direction: column;
-        align-items: center;
-        margin: 20px 0;
-        width: 95%;
-
-    }
-
-    .content-box img {
-        width: 100%;
-        height: auto;
-    }
-
-    .herocontent-box {
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
 
     .features-grid {
         /* flex-direction: column; */
@@ -190,14 +77,14 @@ header {
 
     .features-heading {
         width: 90%;
-        margin-top: 2rem; 
+        margin-top: 2rem;
         text-align: center;
 
 
     }
 
     .testimonial-section {
-        min-height: 300px;  
+        min-height: 300px;
     }
 
 
