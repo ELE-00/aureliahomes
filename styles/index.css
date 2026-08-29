@@ -21,7 +21,6 @@ header {
 }
 
 .testimonial-box {
-    /* border: 2px solid red;    */
     min-height: 300px;
     display: flex;
     flex-direction: column;
@@ -50,18 +49,10 @@ header {
 }
 
 
-/* Imágenes */
-.benefits-image-box img,
-.feature-card2 img {
-    width: 150px;
-    height: 150px;
-}
-
 
 @media screen and (max-width: 768px) {
 
     .features-grid {
-        /* flex-direction: column; */
         flex-wrap: wrap;
         align-items: center;
         gap: 20px;

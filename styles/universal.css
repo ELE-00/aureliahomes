@@ -14,7 +14,6 @@ body {
 /* ----- Shared navigation ----- */
 
 header {
-    /* border: 2px solid red; */
     display: flex;
     width: 100%;
     background-color: #1F2937;
@@ -270,7 +269,6 @@ header {
 
 /*SECTION 4 - Call to action */
 .cta-section {
-    /* border: 2px solid red; */
     min-height: 350px;
     width: 100%;
     display: flex;
@@ -283,7 +281,6 @@ header {
 }
 
 .cta-box {
-    /* border: 2px solid red; */
     background-color: #3880F6;
     display: flex;
     height: 150px;
@@ -296,7 +293,6 @@ header {
 }
 
 .cta-content {
-    /* border: 2px solid red; */
     display: flex;
     width: 80%;
     justify-content: space-between;
@@ -306,14 +302,12 @@ header {
 }
 
 .cta-copy {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
 
 }
 
 .cta-title {
-    /* border: 2px solid red; */
     font-size: 24px;
     color: white;
     font-weight: 900;
@@ -322,7 +316,6 @@ header {
 
 
 .cta-text {
-    /* border: 2px solid red; */
     font-size: 18px;
     color: #e5e7ebc6;
     margin: 0;
@@ -557,7 +550,6 @@ header {
 	}
 
 	.cta-content {
-		/* border: 2px solid red; */
 		background-color: #3880F6;
 		flex-direction: column;
 		align-items: center;
