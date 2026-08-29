@@ -5,6 +5,10 @@ header {
     min-height: auto;
 }
 
+.features-heading{
+    background-color: #F9FAF8;
+}
+
 
 /*SECTION 3 - Testimonial */
 .testimonial-section {

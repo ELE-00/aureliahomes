@@ -380,7 +380,8 @@ header {
 }
 
 .footer-grid > div,
-.footer-grid > nav {
+.footer-grid > nav,
+.footer-grid > address {
 	display: flex;
 	flex: 1;
 	flex-direction: column;
