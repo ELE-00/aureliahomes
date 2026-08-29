@@ -65,7 +65,8 @@ header {
 }
 
 .header-item:hover {
-	color: white;
+	font-weight: bold;
+
 }
 
 .header-item.active {
@@ -168,7 +169,7 @@ header {
     align-items: center;
     background-color: #3880F6;
     border-radius: 8px;
-    min-width: 160px;
+    min-width: 180px;
     height: 35px;
     margin-top: 10px;
     text-decoration: none;
